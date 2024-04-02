@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Microsoft</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #000;
+            background-color: #fff;
+        }
+        #logo{
+            margin-right: 20px;
+        }
+        .top1{
+            float:left;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            margin: 14px 0 14px 85px;
+
+        }
+        .top1 a, .top2 a{
+            font-size: 13.2px;
+            color: #3c4046;
+            text-decoration: none;
+            padding: 0 8px 0 8px;
+        }
+        .top2 a{
+            margin-right: 14px;
+        }
+        .top1 a:hover, .top2 a:hover{
+            text-decoration: underline 1.5px;
+        }
+        .top2{
+            float: right;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            margin: 14px 60px 14px 85px;
+        }
+        .main{
+            position: relative;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 130px;
+            z-index: -1;
+        }
+        .in-main{
+            font-size: 17px;
+            color: white;
+            position: absolute;
+            bottom: 35%;
+            text-align: left;
+            margin-left: 8%;
+        }
+        .in-main h1{
+            font-weight: 500;
+            font-size: 230%;
+        }
+        #button{
+            background-color: #1e79e0;
+            border: none;
+            border-radius: 1px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            padding: 10px 15px 10px 15px;
+        }
+        .bottom{
+            margin: 0 70px 0 80px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        .under{
+            width: 80%;
+            text-align: left;
+            h2{
+                font-weight: 500;
+                font-size: 28px;
+                margin: 12px 0 0 0;
+            }
+            img{
+                width: 304px;
+            }
+            a{
+                text-decoration: none;
+                color: #1e79e0;
+                font-weight: bold;
+            }
+            a:hover{
+                text-decoration: underline;
+                text-underline-style: wave;
+            }
+        }
+        a, .under, #button{
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="top1">
+    <img src="microsoft.png" id="logo" width="110px">
+    <a href="">Microsoft 365</a>
+    <a href="">Office</a>
+    <a href="">Windows</a>
+    <a href="">Support</a>
+</div>
+<div class="top2">
+    <a href="">Microsoft Products</a>
+    <a href="">Search</a>
+    <a href="">Log in</a>
+</div>
+<div class="main">
+    <img src="main.jfif" width="100%">
+    <div class="in-main">
+    <h1>Meet the new Bing</h1>
+    <p>Ask real questions. Comminucate and create. Get answers with<br>
+    an AI-powered web assistant.</p>
+    <button id="button">Learn more about the new Bing</button>
+    </div>
+</div>
+<div class="bottom">
+    <div class="under">
+        <img src="1.avif">
+        <h2>Microsoft Edge</h2>
+        <p>Amazing performance, more privacy, more productivity, and more features.</p>
+        <a href="">Download</a>
+    </div>
+    <div class="under">
+        <img src="2.webp">
+        <h2>Microsoft OneDrive</h2>
+        <p>Save your files and photos to OneDrive and access them from any device, anywhere</p>
+        <a href="">Learn more</a>
+    </div>
+    <div class="under" id="3rd">
+        <img src="3.webp">
+        <h2>OneNote</h2>
+        <p>Get your notes and to-dos in order</p>
+        <a href="">Read more</a>
+    </div>
+    <div class="under">
+        <img src="4.webp">
+        <h2>Outlook for iOS and Android</h2>
+        <p>Stay tuned. Organize. Get more done.</p>
+        <a href="">Download</a>
+    </div>
+</div>
+</body>
+</html>

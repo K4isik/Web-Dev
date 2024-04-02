@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram Login Page</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .right{
+
+            text-align: center;
+
+        }
+        #logo{
+            margin: 45px 30px 30px 30px;
+        }
+        body {
+            background-color: #fafafa;
+            font-family: Helvetica, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        .wrapper {
+
+            display: flex;
+            flex-grow: 1;
+            align-items: center;
+            justify-content: center;
+        }
+        .input-box{
+            font-size: 12px;
+            border:solid 1px rgb(204, 203, 203);
+            background-color: rgb(239, 239, 239);
+            border-radius: 3px;
+            padding: 8px;
+            margin: 3px;
+            width: 250px;
+            height: 19px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .button{
+            width: 270px;
+            height: 32px;
+            margin: 11px;
+            background-color: #3daff3;
+            border-color: transparent;
+            border-radius: 8px;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: white;
+        }
+        .divider{
+            color: #7e7d7d;
+            font-family:inherit;
+            font-weight: 570;
+            font-size: 12px;
+            display: flex;
+            width: 90%;
+            gap: 10px;
+            align-items: center;
+            margin-left: 14px;
+            margin-top: 4px;
+        }
+        .line{
+            flex: 1;
+            height: 1px;
+            background-color: #c2c1c1;
+        }
+        .fb{
+            margin:30px 0 20px 0;
+        }
+        .fb a{
+            text-decoration: none;
+            color: #22328f;
+            font-size: 13px;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+        .forgot a{
+            text-decoration: none;
+            font-size: 12px;
+            color: #072e60;
+        }
+        .donthave{
+            font-size: 13px;
+            margin: 10px 0 22px 0;
+            padding: 20px 62px 20px 59px;
+            border: solid 1px #c0c0c0;
+            display: inline-flex;
+        }
+        .donthave a{
+            text-decoration: none;
+            padding-left: 4px;
+            font-weight: bold;
+            color: #29a6f8;
+        }
+        .apps{
+            font-size: 13px;
+        }
+        .apps img{
+            margin-top: 16px;
+        }
+        .top{
+            border:solid 1px #c0c3c7;
+            padding:13px 22px 20px 22px;
+        }
+        .button, .appref{
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+<section class="wrapper">
+<div class="left">
+    <img src="phone.png">
+<!--    <img src="screen.jpg" class="screen">-->
+</div>
+<div class="right">
+    <div class="top">
+        <img src="instagram-logo.png" id="logo" width="180px" >
+        <form>
+            <input
+                    class="input-box"
+                    type="text"
+                    name="username"
+                    required
+                    placeholder="Phone, number, username or email address"
+            ><br>
+            <input
+                    class="input-box"
+                    type="password"
+                    name="password"
+                    required
+                    placeholder="Password"
+            ><br>
+            <input
+                    class="button"
+                    type="submit"
+                    name="login"
+                    value="Log in"
+            >
+            <div class="divider">
+                <div class="line"></div>
+                <p>OR</p>
+                <div class="line"></div>
+            </div>
+            <div class="dif">
+                <div class="fb">
+                    <img src="facebook.png" width="16px">
+                    <a href="">Log in with Facebook</a>
+                </div>
+                <div class="forgot">
+                    <a href="">Forgot your password?</a>
+                </div>
+            </div>
+    </div>
+            <div class="donthave">
+                <p>Don't have an account yet? </p>
+                <a href="">Register</a>
+            </div>
+
+            <div class="apps">
+                <p>Install the app.</p>
+                <img src="play-store.svg" class="appref" width="130px">
+                <img src="app-store.svg" class="appref" width="130px">
+            </div>
+
+        </form>
+
+</div>
+</section>
+</body>
+</html>

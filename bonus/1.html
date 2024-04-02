@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Button Inside Input</title>
+<style>
+  .input-container {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  .input-container input[type="text"] {
+    padding-right: 30px; /* space for the button */
+  }
+
+  .input-container .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 6px 10px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="input-container">
+  <input type="text">
+  <button class="btn">Button</button>
+</div>
+
+</body>
+</html>

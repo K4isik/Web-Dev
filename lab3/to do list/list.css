@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.todo-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.todo-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.todo-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.delete-btn {
+    color: #ff4d4d;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+#todo-input {
+    width: 80%;
+    height: 30px;
+    margin: 0;
+}
+
+#btn {
+    width: 15%;
+    background-color: turquoise;
+    height: 36px;
+    border: 0px;
+    margin: 0;
+}

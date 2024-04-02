@@ -1,0 +1,236 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #24292e; /* Text color for the entire page */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.header a {
+    text-decoration: none;
+    color: #0366d6; /* GitHub link color */
+}
+
+.header1 {
+    margin-top: 10px;
+    width: 50%;
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items:; */
+    /* padding-right: 600px; */
+}
+
+.logo {
+    filter: invert(100%);
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+#section1 {
+    margin-left: 20px;
+    color: white;
+    /* margin-right: 30px; */
+}
+
+#section2 {
+    margin-left: 20px;
+    color: #ffffff;
+    /* margin-right: 30px; */
+}
+
+#section3 {
+    margin-left: 20px;
+    color: white;
+    /* margin-right: 30px; */
+}
+
+#section4 {
+    margin-left: 20px;
+    color: white;
+}
+
+.header2{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.header input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #24292e;
+    color: #eee3e3;
+    width: 300px;
+}
+
+#head-btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    /* cursor: pointer; */
+}
+
+#border-btn{
+    border: 1px solid white;
+    border-color: white;
+    border-radius: 10%;
+    color: white;
+    background-color: #0c0c0c;
+    height: 40px;
+    margin-right: 30px;
+}
+
+.landing{
+    width: 100%;
+    /* display: flex; */
+    padding: 100px;
+}
+
+.word {
+    text-align: left;
+    margin: 50px 0;
+}
+
+.head {
+    font-size: 96px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.paragraph1 {
+    font-size: 24px;
+    margin-bottom: 96px;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.input-container{
+    display: flex;
+}
+
+.mail-input{
+    position: relative;
+    display: inline-block; 
+    width: 350.15px;
+    height: 46px;
+    margin-right: 20px;
+}
+
+.mail-input input {
+    padding-right: 40px; 
+    width: 228.15px;
+    height: 42px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+  
+.mail-input button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%; /* Ensure button covers the height of the input */
+    padding: 5px 10px;
+    /* font-family: 'Arial', sans-serif; */
+    color: white;
+    background-color: purple;
+    font-weight: bold;
+    border: 1px solid purple;
+    border-radius: 5px;
+}
+
+.div-btn{
+    padding-left: 20px;
+    border-left: 1px solid white;
+}
+
+.div-btn button{
+    height: 100%;
+    background-color: black;
+    border: 1px solid purple;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+/* 
+input[type="mail"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 228.15px;
+    height: 28px;
+} */
+
+/* div > button {
+    padding: 8px 15px;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+} */
+
+.paragraph2{
+    font-size: 20px;
+    color: white;
+    margin-top: 96px;
+    margin-bottom: 30px;
+}
+
+.sponsores {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-top: 20px;
+}
+
+#threem-img {
+    width: 61px;
+    height: 48px;
+}
+
+#kpmg-img{
+    width: 97.55px;
+    height: 40px;
+    margin-left: 45px;
+}
+
+#mers-img{
+    width: 169.14px;
+    height: 44px;
+    margin-left: 45px;
+}
+
+#sap-img{
+    width: 88px;
+    height: 44px;
+    margin-left: 45px;
+}
+
+#pandg-img{
+    width: 72.65px;
+    height: 32px;
+    margin-left: 45px;
+}
+
+#telus-img{
+    width: 162.82px;
+    height: 32px;
+    margin-left: 45px;
+}

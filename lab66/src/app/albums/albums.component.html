@@ -1,0 +1,24 @@
+<fieldset class="form" style="margin-top: 100px">
+  <label for="title">Title:</label>
+  <input type="text" [(ngModel)]="newAlbum.title" id="title"> <br />
+  <button (click)="addAlbum()">Add post</button>
+</fieldset>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col">
+      <p class="lead">Albums</p>
+      <ul class="list-group" *ngIf="loaded; else loading">
+        <li class="list-group-item d-flex justify-content-between" *ngFor="let album of albums">
+          <a [routerLink]="['/albums', album.id]">{{album.id}} - {{album.title}}</a>
+          <div>
+            <button class="btn btn-outline-danger" (click)="deleteAlbum(album.id)">Delete</button>
+          </div>
+        </li>
+      </ul>
+      <ng-template #loading>
+        <p class="text-muted">Page is loading...</p>
+      </ng-template>
+    </div>
+  </div>
+</div>

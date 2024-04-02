@@ -1,0 +1,36 @@
+
+<div class="product-container">
+  <div *ngFor="let product of filteredProducts" class="product-card">
+    <div *ngFor="let image of product.img; let i = index">
+      <img
+        [src]="image"
+        [alt]="product.name"
+      />
+    </div>
+    <h3>
+      <a
+        [title]="product.name + ' details'"
+        [href]="product.link"
+      >
+        {{ product.name }}
+      </a>
+    </h3>
+    <p *ngIf="product.description">
+      <span>Description: </span>{{ product.description }}
+    </p>
+    <p *ngIf="product.price" class="price">
+      <span>{{ product.price }} </span
+      > ₸
+    </p>
+    <ngb-rating
+      [max]="5"
+      [(rate)]="product.rating"
+      [readonly]="true"
+    ></ngb-rating>
+    <div class="button-container button-row">
+      <button type="button" (click)="sharetg(product.name, product.link)">
+        Share with Telegram
+      </button>
+    </div>
+  </div>
+</div>
