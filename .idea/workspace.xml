@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48e4d654-881a-4c23-b57e-56c153b8e1f9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8/myenv/shopback/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/myenv/shopback/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab9/hhback/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab9/hhback/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab9/hhback/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/lab9/hhback/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +61,7 @@
       <workItem from="1712058422191" duration="819000" />
       <workItem from="1712314103149" duration="2155000" />
       <workItem from="1712653572048" duration="216000" />
+      <workItem from="1712915603732" duration="3625000" />
     </task>
     <servers />
   </component>

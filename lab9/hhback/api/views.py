@@ -2,6 +2,7 @@ from django.http import JsonResponse
 from django.shortcuts import render
 from .models import Company, Vacancy
 
+# companies
 def company_list(request):
     companies = Company.objects.all()
     data = []
@@ -16,6 +17,7 @@ def company_list(request):
         data.append(company_data)
     return JsonResponse(data, safe=False)
 
+# companies/id
 def company_detail(request, id):
     try:
         company = Company.objects.get(id=id)
@@ -29,6 +31,7 @@ def company_detail(request, id):
     except Company.DoesNotExist:
         return JsonResponse({'error': 'Company not found'}, status=404)
 
+# companies/id/vacancies
 def company_vacancy_list(request, id):
     vacancies = Vacancy.objects.filter(company=id)
     data = []
@@ -43,6 +46,7 @@ def company_vacancy_list(request, id):
         data.append(vacancy_data)
     return JsonResponse(data, safe=False)
 
+# vacancies
 def vacancy_list(request):
     vacancies = Vacancy.objects.all()
     data = []
@@ -57,6 +61,7 @@ def vacancy_list(request):
         data.append(vacancy_data)
     return JsonResponse(data, safe=False)
 
+# (vacancies/id)
 def vacancy_detail(request, id):
     try:
         vacancy = Vacancy.objects.get(id=id)
@@ -73,6 +78,8 @@ def vacancy_detail(request, id):
 
 def top_ten_vacancies(request):
     vacancies = Vacancy.objects.order_by('-salary')[:10]
+    last_vacancy = vacancies.pop()
+    vacancies.insert(0, last_vacancy)
     data = []
     for vacancy in vacancies:
         vacancy_data = {
@@ -83,4 +90,24 @@ def top_ten_vacancies(request):
         'company':vacancy.company.name
         }
         data.append(vacancy_data)
+    return JsonResponse(data, safe=False)
+
+
+def top_ten_vacancies(request):
+    vacancies = Vacancy.objects.order_by('-salary')[:10]
+    data = []
+    for vacancy in vacancies:
+        vacancy_data = {
+        'id': vacancy.id,
+        'name': vacancy.name,
+        'description': vacancy.description,
+        'salary': vacancy.salary,
+        'company':vacancy.company.name
+        }
+        data.append(vacancy_data)
+    # data.reverse()
+    # if data:
+    #     last_element = data.pop()
+    #     data.insert(0, last_element)
+
     return JsonResponse(data, safe=False)
